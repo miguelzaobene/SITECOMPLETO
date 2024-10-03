@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>QUIZ</title>
+</head>
+<body id="body_quiz">
+
+    <div id="cabecalho">
+        <a href=""><img src="midia/Logo.png" alt=""></a>
+        <a href="index.html"><button class="button1">Ínicio</button></a>
+        <a href="produtos.html"><button class="button1">Produtos</button></a>
+        <a href="contato.html"><button class="button1">Contato</button></a>
+        <a href="quiz.html"><button class="button1">Quiz</button></a>
+    </div>
+    <section class="quiz-section">
+        <h2>Quiz da Stepwise:</h2>
+        <form id="quiz-form">
+            <section class="question">
+                <h3>1. Qual marca é conhecida por seu famoso modelo de tênis "Air Force 1"?</h3>
+                <label><input type="radio" name="q1" value="A" onclick="disableOptions('q1'), playSound()">A) Adidas</label><br>
+                <label><input type="radio" name="q1" value="B" onclick="disableOptions('q1'), playSound()">B) Nike</label><br>
+                <label><input type="radio" name="q1" value="C" onclick="disableOptions('q1'), playSound()">C) Puma</label><br>
+                <label><input type="radio" name="q1" value="D" onclick="disableOptions('q1'), playSound()">D) Reebok</label>
+            </section>
+            
+            <section class="question">
+                <h3>2. O que significa a sigla "SB" em Nike SB?</h3>
+                <label><input type="radio" name="q2" value="A" onclick="disableOptions('q2'), playSound()">A) Skater Boy</label><br>
+                <label><input type="radio" name="q2" value="B" onclick="disableOptions('q2'), playSound()">B) Street Ball</label><br>
+                <label><input type="radio" name="q2" value="C" onclick="disableOptions('q2'), playSound()">C) Skateboarding</label><br>
+                <label><input type="radio" name="q2" value="D" onclick="disableOptions('q2'), playSound()">D) Sneakers Brand</label>
+            </section>
+            
+            <section class="question">
+                <h3>3. Qual tênis da Adidas é conhecido pela sua colaboração com Kanye West?</h3>
+                <label><input type="radio" name="q3" value="A" onclick="disableOptions('q3'), playSound()">A) Superstar</label><br>
+                <label><input type="radio" name="q3" value="B" onclick="disableOptions('q3'), playSound()">B) Yeezy</label><br>
+                <label><input type="radio" name="q3" value="C" onclick="disableOptions('q3'), playSound()">C) NMD</label><br>
+                <label><input type="radio" name="q3" value="D" onclick="disableOptions('q3'), playSound()">D) Ultraboost</label>
+            </section>
+            
+            <section class="question">
+                <h3>4. Qual marca de tênis popularizou o modelo "Old Skool"?</h3>
+                <label><input type="radio" name="q4" value="A" onclick="disableOptions('q4'), playSound()">A) Converse</label><br>
+                <label><input type="radio" name="q4" value="B" onclick="disableOptions('q4'), playSound()">B) Nike</label><br>
+                <label><input type="radio" name="q4" value="C" onclick="disableOptions('q4'), playSound()">C) Vans</label><br>
+                <label><input type="radio" name="q4" value="D" onclick="disableOptions('q4'), playSound()">D) New Balance</label>
+            </section>
+            
+            <section class="question">
+                <h3>5. O que é considerado um clássico no mundo dos tênis streetwear?</h3>
+                <label><input type="radio" name="q5" value="A" onclick="disableOptions('q5'), playSound()">A) Adidas Stan Smith</label><br>
+                <label><input type="radio" name="q5" value="B" onclick="disableOptions('q5'), playSound()">B) Puma Suede</label><br>
+                <label><input type="radio" name="q5" value="C" onclick="disableOptions('q5'), playSound()">C) Nike Cortez</label><br>
+                <label><input type="radio" name="q5" value="D" onclick="disableOptions('q5'), playSound()">D) Reebok Classic</label>
+            </section>
+            
+            <section class="question">
+                <h3>6. Qual destes é um tênis da linha Air Jordan?</h3>
+                <label><input type="radio" name="q6" value="A" onclick="disableOptions('q6'), playSound()">A) Jordan 1</label><br>
+                <label><input type="radio" name="q6" value="B" onclick="disableOptions('q6'), playSound()">B) Adidas Ultraboost</label><br>
+                <label><input type="radio" name="q6" value="C" onclick="disableOptions('q6'), playSound()">C) Puma RS-X</label><br>
+                <label><input type="radio" name="q6" value="D" onclick="disableOptions('q6'), playSound()">D) Nike Free Run</label>
+            </section>
+            
+            <section class="question">
+                <h3>7. O que significa o termo "deadstock" no universo de tênis?</h3>
+                <label><input type="radio" name="q7" value="A" onclick="disableOptions('q7'), playSound()">A) Tênis usados</label><br>
+                <label><input type="radio" name="q7" value="B" onclick="disableOptions('q7'), playSound()">B) Tênis novos, nunca usados</label><br>
+                <label><input type="radio" name="q7" value="C" onclick="disableOptions('q7'), playSound()">C) Tênis vintage</label><br>
+                <label><input type="radio" name="q7" value="D" onclick="disableOptions('q7'), playSound()">D) Tênis falsificados</label>
+            </section>
+            
+            <section class="question">
+                <h3>8. Qual colaboração entre Nike e uma marca de luxo ficou famosa no streetwear?</h3>
+                <label><input type="radio" name="q8" value="A" onclick="disableOptions('q8'), playSound()">A) Nike x Supreme</label><br>
+                <label><input type="radio" name="q8" value="B" onclick="disableOptions('q8'), playSound()">B) Nike x Off-White</label><br>
+                <label><input type="radio" name="q8" value="C" onclick="disableOptions('q8'), playSound()">C) Nike x Bape</label><br>
+                <label><input type="radio" name="q8" value="D" onclick="disableOptions('q8'), playSound()">D) Nike x Stüssy</label>
+            </section>
+            
+            <section class="question">
+                <h3>9. Qual marca é famosa pelo símbolo do "puma" em seus tênis?</h3>
+                <label><input type="radio" name="q9" value="A" onclick="disableOptions('q9'), playSound()">A) Adidas</label><br>
+                <label><input type="radio" name="q9" value="B" onclick="disableOptions('q9'), playSound()">B) Reebok</label><br>
+                <label><input type="radio" name="q9" value="C" onclick="disableOptions('q9'), playSound()">C) Puma</label><br>
+                <label><input type="radio" name="q9" value="D" onclick="disableOptions('q9'), playSound()">D) Converse</label>
+            </section>
+            
+            <section class="question">
+                <h3>10. O modelo “Chuck Taylor All Star” é de qual marca?</h3>
+                <label><input type="radio" name="q10" value="A" onclick="disableOptions('q10'), playSound()">A) Nike</label><br>
+                <label><input type="radio" name="q10" value="B" onclick="disableOptions('q10'), playSound()">B) Adidas</label><br>
+                <label><input type="radio" name="q10" value="C" onclick="disableOptions('q10'), playSound()">C) Converse</label><br>
+                <label><input type="radio" name="q10" value="D" onclick="disableOptions('q10'), playSound()">D) Vans</label>
+            </section>
+
+ 
+         <button type="button" class="active" id="botao1" onclick="SubmitQuiz()">Enviar Respostas</button>
+         <button type="submit" class="disabled" id="botao2" disabled>Responder Novamente</button>
+ 
+ 
+        </form>
+        <audio id="venceusom" src="som/venceu.mp3" preload="auto"></audio>
+        <audio id="selecionasom" src="som/seleciona.mp3" preload="auto"></audio>
+        <audio id="perdeusom" src="som/perdeu.mp3" preload="auto"></audio>
+ 
+        <section id="result"></section>
+    </section>
+
+
+    <div id="rodape">
+        <a href=""><img src="midia/Logo.png"width="200" height="200" alt="" title="Página Inicial"></a></div>
+    
+    <div id="rodape">
+        <a href="https://www.facebook.com/AtitudeArtwalk"><button class="button3">Facebook</button></a>
+        <a href="https://www.youtube.com/@infosustentavel"><button class="button3">YouTube</button></a>
+        <a href="https://www.instagram.com/atitudeartwalk"><button class="button3">Instagram</button></a>
+    </div>
+
+    <script src="script.js"> </script>
+    
+ </body>
+</html>
